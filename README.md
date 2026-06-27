@@ -89,5 +89,5 @@ cd fittrack
 
 ## Acknowledgements
 
-Group project — Taylor's University, Bachelor of Computer Science.  
+Group project : Taylor's University, Bachelor of Computer Science.  
 Backend architecture and implementation by Keith Choe.
