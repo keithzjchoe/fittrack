@@ -12,13 +12,13 @@ FitTrack is a standalone fitness management application that allows users to cre
 
 ## Features
 
-- **User Authentication** — Sign up, log in, and set up a personal profile
-- **Dashboard** — Personalised home screen displaying username, fitness goal, and calorie summary
-- **Workout Log** — Add, edit, and delete exercises with sets and repetitions tracking
-- **Meal Log** — Log food items and track daily caloric intake against a set goal
-- **Data Overview** — Summary view of logged fitness and meal data
-- **Profile Management** — View and update personal details (username, email, height, weight, gender)
-- **Persistent Storage** — All data is saved locally to `.dat` files and reloaded on next launch
+- **User Authentication** : Sign up, log in, and set up a personal profile
+- **Dashboard** : Personalised home screen displaying username, fitness goal, and calorie summary
+- **Workout Log** : Add, edit, and delete exercises with sets and repetitions tracking
+- **Meal Log** : Log food items and track daily caloric intake against a set goal
+- **Data Overview** : Summary view of logged fitness and meal data
+- **Profile Management** : View and update personal details (username, email, height, weight, gender)
+- **Persistent Storage** : All data is saved locally to `.dat` files and reloaded on next launch
 
 ---
 
@@ -55,7 +55,7 @@ This was a group project (4 members). I served as the **Backend Engineer**, resp
 
 - Designing and implementing the **DAO layer** for all data access (Profile, Workout, Meal, Data Overview)
 - Building the **DTO and Model classes** for data encapsulation and transfer between layers
-- Implementing all **JavaFX Controllers** — wiring UI components to backend logic
+- Implementing all **JavaFX Controllers**, wiring UI components to backend logic
 - Setting up **file-based persistence** using Java Object Serialization (`ObjectInputStream` / `ObjectOutputStream`)
 - Structuring the overall **MVC architecture** of the project
 
