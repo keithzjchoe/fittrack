@@ -1,4 +1,4 @@
-# FitTrack — Fitness Tracking Desktop Application
+# FitTrack - Fitness Tracking Desktop Application
 
 A JavaFX desktop application for tracking workouts, meals, and fitness goals. Built as a group project with a full MVC architecture, persistent file storage, and a multi-screen UI.
 
