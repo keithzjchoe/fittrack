@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.shouldwork.controllers.SettingController">
+    <children>
+        <Pane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button layoutX="129.0" layoutY="3.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="337.0" style="-fx-background-color: transparent;" text="SuperFit">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="40.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="165.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/muscle.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="68.0" fitWidth="62.0" layoutX="363.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/image.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="428.0" layoutY="16.0" prefHeight="32.0" prefWidth="176.0" text="Never Back Down">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="8.0" prefHeight="46.0" prefWidth="154.0" text="Never Give Up">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="1.0" layoutY="63.0" prefHeight="217.0" prefWidth="103.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Button layoutX="-2.0" layoutY="60.0" mnemonicParsing="false" onAction="#showDashboard" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: TRANSPARENT;" text="Dashboard">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/layout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutY="97.0" mnemonicParsing="false" onAction="#showMealLog" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Meal Log">
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/dinner.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="-1.0" layoutY="135.0" mnemonicParsing="false" onAction="#showWorkoutLog" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" text="Workout Log">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/report.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-3.0" layoutY="174.0" mnemonicParsing="false" onAction="#showDataOverview" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Data Overview">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/overview.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Label fx:id="usernameField" layoutX="36.0" layoutY="3.0" prefHeight="39.0" prefWidth="64.0" text="Username">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/User_Profile-modified.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="-1.0" layoutY="282.0" prefHeight="118.0" prefWidth="106.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Button layoutX="2.0" layoutY="7.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: TRANSPARENT;" text="Profile">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="1.0" layoutY="45.0" mnemonicParsing="false" onAction="#showSettings" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" text="Settings">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/settings.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="-1.0" layoutY="84.0" mnemonicParsing="false" onAction="#showLogOut" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Log Out">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/exit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <Line endX="1.0" endY="3.0" layoutX="103.0" layoutY="105.0" startX="-102.0" startY="3.0" />
+      <Pane layoutX="170.0" layoutY="109.0" prefHeight="215.0" prefWidth="372.0" style="-fx-background-color: A2AABB; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="99.0" layoutY="22.0" prefHeight="32.0" prefWidth="195.0" text="Please Choose A Gender:">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="19.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="femaleRadioButton" layoutX="218.0" layoutY="87.0" mnemonicParsing="false" opacity="0.13" prefWidth="17.0" style="-fx-scale-x: 3; -fx-scale-y: 3;">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="maleRadioButton" layoutX="136.0" layoutY="88.0" mnemonicParsing="false" opacity="0.13" prefHeight="17.0" prefWidth="16.0" selected="true" style="-fx-scale-x: 3; -fx-scale-y: 3;" toggleGroup="$gender" />
+            <Label contentDisplay="CENTER" layoutX="127.0" layoutY="132.0" style="-fx-text-fill: dark blue;" text="Male">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="203.0" layoutY="132.0" prefHeight="16.0" prefWidth="49.0" style="-fx-text-fill: dark blue;" text="Female">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="9.0" layoutY="154.0" prefHeight="42.0" prefWidth="358.0" spacing="160.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#showSettings" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: b2a2fc;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#updateGender" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: b2a2fc;" text="Done" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

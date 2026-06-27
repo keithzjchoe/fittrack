@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.shouldwork.controllers.ProfileController">
+    <children>
+        <Pane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button layoutX="129.0" layoutY="3.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="337.0" style="-fx-background-color: transparent;" text="SuperFit">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="40.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="165.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/muscle.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="68.0" fitWidth="62.0" layoutX="363.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/image.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="428.0" layoutY="16.0" prefHeight="32.0" prefWidth="176.0" text="Never Back Down">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="8.0" prefHeight="46.0" prefWidth="154.0" text="Never Give Up">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="1.0" layoutY="63.0" prefHeight="217.0" prefWidth="103.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Button layoutX="-2.0" layoutY="60.0" mnemonicParsing="false" onAction="#showDashboard" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: TRANSPARENT;" text="Dashboard">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/layout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutY="97.0" mnemonicParsing="false" onAction="#showMealLog" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Meal Log">
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/dinner.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="-1.0" layoutY="135.0" mnemonicParsing="false" onAction="#showWorkoutLog" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" text="Workout Log">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/report.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-3.0" layoutY="174.0" mnemonicParsing="false" onAction="#showDataOverview" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Data Overview">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/overview.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Label fx:id="usernameField" layoutX="36.0" layoutY="3.0" prefHeight="40.0" prefWidth="64.0" text="Username">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/User_Profile-modified.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="-1.0" layoutY="282.0" prefHeight="118.0" prefWidth="106.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Button layoutX="2.0" layoutY="7.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: TRANSPARENT;" text="Profile">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="1.0" layoutY="45.0" mnemonicParsing="false" onAction="#showSettings" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" text="Settings">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/settings.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="-1.0" layoutY="84.0" mnemonicParsing="false" onAction="#showLogOut" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Log Out">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/exit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <Line endX="1.0" endY="3.0" layoutX="103.0" layoutY="105.0" startX="-102.0" startY="3.0" />
+        <Pane layoutX="125.0" layoutY="68.0" prefHeight="321.0" prefWidth="461.0" style="-fx-background-color: EBF7FF; -fx-background-radius: 10;">
+            <children>
+            <VBox layoutX="110.0" layoutY="20.0" prefHeight="285.0" prefWidth="255.0" spacing="20.0">
+               <children>
+                      <Pane prefHeight="40.0" prefWidth="296.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+                     <children>
+                              <Label fx:id="usernameLabel" prefHeight="40.0" prefWidth="296.0" text="Username" textFill="WHITE">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding></Label>
+                     </children>
+                      </Pane>
+                      <Pane prefHeight="39.0" prefWidth="296.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+                     <children>
+                              <Label fx:id="emailLabel" prefHeight="40.0" prefWidth="296.0" text="Email" textFill="WHITE">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding></Label>
+                     </children>
+                      </Pane>
+                      <Pane prefHeight="40.0" prefWidth="296.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+                     <children>
+                              <Label fx:id="heightLabel" prefHeight="40.0" prefWidth="296.0" text="Height" textFill="WHITE">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding></Label>
+                     </children>
+                      </Pane>
+                      <Pane prefHeight="40.0" prefWidth="296.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+                     <children>
+                              <Label fx:id="weightLabel" prefHeight="41.0" prefWidth="296.0" text="Weight" textFill="WHITE">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding></Label>
+                     </children>
+                      </Pane>
+                      <Pane prefHeight="40.0" prefWidth="296.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+                          <children>
+                              <Label fx:id="genderLabel" prefHeight="41.0" prefWidth="296.0" text="Gender" textFill="WHITE">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding></Label>
+                          </children>
+                      </Pane>
+               </children>
+            </VBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

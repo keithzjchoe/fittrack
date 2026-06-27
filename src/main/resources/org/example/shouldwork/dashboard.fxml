@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.shouldwork.controllers.DashboardController">
+    <children>
+        <Pane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button layoutX="129.0" layoutY="3.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="337.0" style="-fx-background-color: transparent;" text="SuperFit">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="40.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="165.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/muscle.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="68.0" fitWidth="62.0" layoutX="363.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/image.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="428.0" layoutY="16.0" prefHeight="32.0" prefWidth="176.0" text="Never Back Down">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="8.0" prefHeight="46.0" prefWidth="154.0" text="Never Give Up">
+                    <font>
+                        <Font name="Franklin Gothic Medium Cond" size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="1.0" layoutY="63.0" prefHeight="217.0" prefWidth="103.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Button layoutX="-2.0" layoutY="60.0" mnemonicParsing="false" onAction="#showDashboard" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: TRANSPARENT;" text="Dashboard">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/layout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutY="97.0" mnemonicParsing="false" onAction="#showMealLog" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Meal Log">
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/dinner.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="-1.0" layoutY="135.0" mnemonicParsing="false" onAction="#showWorkoutLog" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" text="Workout Log">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/report.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-3.0" layoutY="174.0" mnemonicParsing="false" onAction="#showDataOverview" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Data Overview">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/overview.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Label fx:id="usernameField" layoutX="36.0" layoutY="3.0" prefHeight="39.0" prefWidth="64.0" text="Username">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/User_Profile-modified.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="-1.0" layoutY="282.0" prefHeight="118.0" prefWidth="106.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Button layoutX="2.0" layoutY="7.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: TRANSPARENT;" text="Profile">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="1.0" layoutY="45.0" mnemonicParsing="false" onAction="#showSettings" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" text="Settings">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/settings.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="-1.0" layoutY="84.0" mnemonicParsing="false" onAction="#showLogOut" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="Log Out">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/exit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </Pane>
+        <Line endX="1.0" endY="3.0" layoutX="103.0" layoutY="105.0" startX="-102.0" startY="3.0" />
+        <Pane layoutX="107.0" layoutY="79.0" prefHeight="290.0" prefWidth="488.0" style="-fx-background-color: EBF7FF; -fx-background-radius: 10;">
+            <children>
+            <HBox layoutY="29.0" prefHeight="100.0" prefWidth="489.0" spacing="10.0">
+               <children>
+                      <Pane prefHeight="98.0" prefWidth="148.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0.4;">
+                          <children>
+                              <Line endX="34.0" endY="-1.0" layoutX="110.0" layoutY="27.0" startX="-106.5" startY="-1.0" style="-fx-stroke-width: 0.2;" />
+                              <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="55.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../../../../../Projects/src/main/resources/Images/kisspng-electricity-computer-icons-lightning-chevrolet-bol-shock-background-5ade4a65dc6863.0856450615245174779028.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="64.0" layoutX="41.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../Images/dinner.png" />
+                                  </image>
+                              </ImageView>
+                              <Button layoutX="-3.0" layoutY="-5.0" mnemonicParsing="false" onAction="#showMealLog" prefHeight="108.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Meal Log">
+                                  <font>
+                                      <Font size="26.0" />
+                                  </font>
+                           <padding>
+                              <Insets bottom="70.0" />
+                           </padding>
+                              </Button>
+                          </children>
+                      </Pane>
+                      <Pane prefHeight="99.0" prefWidth="148.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0.4;">
+                          <children>
+                              <Line endX="34.0" endY="-1.0" layoutX="110.0" layoutY="28.0" startX="-106.5" startY="-1.0" style="-fx-stroke-width: 0.2;" />
+                              <ImageView fitHeight="150.0" fitWidth="64.0" layoutX="42.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../Images/report.png" />
+                                  </image>
+                              </ImageView>
+                              <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#showWorkoutLog" prefHeight="101.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Workout Log">
+                                  <font>
+                                      <Font size="22.0" />
+                                  </font>
+                           <padding>
+                              <Insets bottom="70.0" />
+                           </padding>
+                              </Button>
+                          </children>
+                      </Pane>
+                      <Pane prefHeight="98.0" prefWidth="148.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0.4;">
+                          <children>
+                              <Line endX="51.5" endY="-1.0" layoutX="93.0" layoutY="30.0" startX="-89.5" startY="-1.0" style="-fx-stroke-width: 0.2;" />
+                              <ImageView fitHeight="150.0" fitWidth="64.0" layoutX="43.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../Images/overview.png" />
+                                  </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" onAction="#showDataOverview" prefHeight="101.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Data Overview">
+                                  <font>
+                                      <Font size="22.0" />
+                                  </font>
+                           <padding>
+                              <Insets bottom="65.0" />
+                           </padding>
+                              </Button>
+                          </children>
+                      </Pane>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="1.0" layoutY="155.0" prefHeight="100.0" prefWidth="488.0" spacing="10.0">
+               <children>
+                      <Pane prefHeight="99.0" prefWidth="148.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0.4;">
+                          <children>
+                              <Line endX="51.5" endY="-1.0" layoutX="93.0" layoutY="31.0" startX="-89.5" startY="-1.0" style="-fx-stroke-width: 0.2;" />
+                              <Button layoutX="105.0" layoutY="66.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="23.0" style="-fx-background-color: transparent;">
+                                  <graphic>
+                                      <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../../../../../../../Projects/src/main/resources/Images/minus.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                              </Button>
+                              <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="104.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="Profile">
+                                  <font>
+                                      <Font size="26.0" />
+                                  </font>
+                           <padding>
+                              <Insets bottom="60.0" />
+                           </padding>
+                              </Button>
+                              <ImageView fitHeight="150.0" fitWidth="64.0" layoutX="42.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../Images/user.png" />
+                                  </image>
+                              </ImageView>
+                          </children>
+                      </Pane>
+                  <Pane prefHeight="98.0" prefWidth="148.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0.4;">
+                     <children>
+                        <Line endX="51.5" endY="-1.0" layoutX="93.0" layoutY="30.0" startX="-89.5" startY="-1.0" style="-fx-stroke-width: 0.2;" />
+                        <ImageView fitHeight="150.0" fitWidth="64.0" layoutX="43.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/settings.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="-2.0" mnemonicParsing="false" onAction="#showSettings" prefHeight="103.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="Settings">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="65.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="98.0" prefWidth="148.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 0.4;">
+                     <children>
+                        <Line endX="51.5" endY="-1.0" layoutX="93.0" layoutY="30.0" startX="-89.5" startY="-1.0" style="-fx-stroke-width: 0.2;" />
+                        <ImageView fitHeight="150.0" fitWidth="64.0" layoutX="43.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/exit.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="-1.0" mnemonicParsing="false" onAction="#showLogOut" prefHeight="92.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Log Out">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="65.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+package org.example.shouldwork.model;
+
+public class Profile {
+    private int id;
+    private String username;
+    private String email;
+    private int height;
+    private int weight;
+    private String gender;
+
+    // Constructor, Getters, Setters
+
+    public Profile(int id, String username, String email, int height, int weight, String gender) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.height = height;
+        this.weight = weight;
+        this.gender = gender;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+}
+
