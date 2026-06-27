@@ -6,7 +6,7 @@ A JavaFX desktop application for tracking workouts, meals, and fitness goals. Bu
 
 ## Project Overview
 
-FitTrack is a standalone fitness management application that allows users to create a profile, log workouts and meals, set caloric intake goals, and view a data overview of their fitness activity — all without requiring an internet connection or external database.
+FitTrack is a standalone fitness management application that allows users to create a profile, log workouts and meals, set caloric intake goals, and view a data overview of their fitness activity without requiring an internet connection or external database.
 
 ---
 
